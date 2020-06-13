@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		10AEAEE62494F6C40061C668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE52494F6C40061C668 /* AppDelegate.swift */; };
 		10AEAEE82494F6C40061C668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE72494F6C40061C668 /* SceneDelegate.swift */; };
-		10AEAEEA2494F6C40061C668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE92494F6C40061C668 /* ViewController.swift */; };
+		10AEAEEA2494F6C40061C668 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE92494F6C40061C668 /* MainViewController.swift */; };
 		10AEAEED2494F6C40061C668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAEEB2494F6C40061C668 /* Main.storyboard */; };
 		10AEAEEF2494F6C60061C668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAEEE2494F6C60061C668 /* Assets.xcassets */; };
 		10AEAEF22494F6C60061C668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAEF02494F6C60061C668 /* LaunchScreen.storyboard */; };
+		10AEAEFE2494FA4B0061C668 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */; };
+		10AEAF002494FA7C0061C668 /* PensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */; };
+		10AEAF022494FAB00061C668 /* PayDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAF012494FAB00061C668 /* PayDayViewController.swift */; };
+		10AEAF082494FB040061C668 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF072494FB040061C668 /* Credit.storyboard */; };
+		10AEAF0A2494FB140061C668 /* Pension.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF092494FB140061C668 /* Pension.storyboard */; };
+		10AEAF0C2494FB1C0061C668 /* PayDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10AEAEE22494F6C40061C668 /* LuckyTeam_HW2.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyTeam_HW2.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AEAEE52494F6C40061C668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10AEAEE72494F6C40061C668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10AEAEE92494F6C40061C668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10AEAEE92494F6C40061C668 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10AEAEEC2494F6C40061C668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10AEAEEE2494F6C60061C668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10AEAEF12494F6C60061C668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10AEAEF32494F6C60061C668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = LuckyTeam_HW2.8/Storyboards/CreditViewController.swift; sourceTree = SOURCE_ROOT; };
+		10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensionViewController.swift; sourceTree = "<group>"; };
+		10AEAF012494FAB00061C668 /* PayDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDayViewController.swift; sourceTree = "<group>"; };
+		10AEAF072494FB040061C668 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
+		10AEAF092494FB140061C668 /* Pension.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pension.storyboard; sourceTree = "<group>"; };
+		10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayDay.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		10AEAEE42494F6C40061C668 /* LuckyTeam_HW2.8 */ = {
 			isa = PBXGroup;
 			children = (
-				10AEAEE52494F6C40061C668 /* AppDelegate.swift */,
-				10AEAEE72494F6C40061C668 /* SceneDelegate.swift */,
-				10AEAEE92494F6C40061C668 /* ViewController.swift */,
-				10AEAEEB2494F6C40061C668 /* Main.storyboard */,
-				10AEAEEE2494F6C60061C668 /* Assets.xcassets */,
-				10AEAEF02494F6C60061C668 /* LaunchScreen.storyboard */,
-				10AEAEF32494F6C60061C668 /* Info.plist */,
+				10AEAEF92494F70B0061C668 /* SupportingFiles */,
+				10AEAEFA2494F7450061C668 /* ViewControllers */,
+				10AEAEFB2494F7570061C668 /* Storyboards */,
+				10AEAEFC2494F7940061C668 /* Sources */,
 			);
 			path = LuckyTeam_HW2.8;
+			sourceTree = "<group>";
+		};
+		10AEAEF92494F70B0061C668 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				10AEAEE52494F6C40061C668 /* AppDelegate.swift */,
+				10AEAEE72494F6C40061C668 /* SceneDelegate.swift */,
+				10AEAEF32494F6C60061C668 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		10AEAEFA2494F7450061C668 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10AEAEE92494F6C40061C668 /* MainViewController.swift */,
+				10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */,
+				10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */,
+				10AEAF012494FAB00061C668 /* PayDayViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		10AEAEFB2494F7570061C668 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				10AEAEEB2494F6C40061C668 /* Main.storyboard */,
+				10AEAF072494FB040061C668 /* Credit.storyboard */,
+				10AEAF092494FB140061C668 /* Pension.storyboard */,
+				10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */,
+				10AEAEF02494F6C60061C668 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		10AEAEFC2494F7940061C668 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				10AEAEEE2494F6C60061C668 /* Assets.xcassets */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AEAEF22494F6C60061C668 /* LaunchScreen.storyboard in Resources */,
+				10AEAF0A2494FB140061C668 /* Pension.storyboard in Resources */,
 				10AEAEEF2494F6C60061C668 /* Assets.xcassets in Resources */,
 				10AEAEED2494F6C40061C668 /* Main.storyboard in Resources */,
+				10AEAF0C2494FB1C0061C668 /* PayDay.storyboard in Resources */,
+				10AEAF082494FB040061C668 /* Credit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10AEAEEA2494F6C40061C668 /* ViewController.swift in Sources */,
+				10AEAF002494FA7C0061C668 /* PensionViewController.swift in Sources */,
+				10AEAEEA2494F6C40061C668 /* MainViewController.swift in Sources */,
 				10AEAEE62494F6C40061C668 /* AppDelegate.swift in Sources */,
 				10AEAEE82494F6C40061C668 /* SceneDelegate.swift in Sources */,
+				10AEAF022494FAB00061C668 /* PayDayViewController.swift in Sources */,
+				10AEAEFE2494FA4B0061C668 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJK5K39YAH;
-				INFOPLIST_FILE = LuckyTeam_HW2.8/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LuckyTeam_HW2.8/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJK5K39YAH;
-				INFOPLIST_FILE = LuckyTeam_HW2.8/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LuckyTeam_HW2.8/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
