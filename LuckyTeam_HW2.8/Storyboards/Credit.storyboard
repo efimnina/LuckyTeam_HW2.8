@@ -10,22 +10,150 @@
         <!--Credit View Controller-->
         <scene sceneID="iVj-me-3p5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ev-2j-aWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Cfm-eV-CGX" customClass="CreditViewController" customModule="LuckyTeam_HW2_8" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XYH-7F-CIc">
+                    <view key="view" contentMode="scaleToFill" id="XPe-i8-WHO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mS-sG-MKg">
-                                <rect key="frame" x="140" y="193" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hello!"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ogH-0e-Xnl">
+                                <rect key="frame" x="16" y="76.5" width="130" height="183"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость квартиры" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-90-N7G">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Первоначальный взнос" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA2-Po-Jry">
+                                        <rect key="frame" x="0.0" y="49" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Процентная ставка" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFC-hn-UUO">
+                                        <rect key="frame" x="0.0" y="98" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок кредита, мес:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yj-cl-Avo">
+                                        <rect key="frame" x="0.0" y="147" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="AIj-oO-HwO"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РАСЧЕТ ИПОТЕЧНОГО КРЕДИТА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-8C-3KG">
+                                <rect key="frame" x="16" y="16" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕЗУЛЬТАТЫ РАСЧЕТА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUp-ha-1JT">
+                                <rect key="frame" x="16" y="351.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-La-sZX">
+                                <rect key="frame" x="16" y="412" width="130" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xry-f3-JvW">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Полная сумма" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-za-bQS">
+                                        <rect key="frame" x="0.0" y="58" width="103.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисленные проценты" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZU-HI-oUB">
+                                        <rect key="frame" x="0.0" y="98" width="102" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="h01-9M-vh2"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sKg-3q-1Ra">
+                                <rect key="frame" x="168" y="412" width="136" height="134"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRj-Xp-ofQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-Bk-Lfh">
+                                        <rect key="frame" x="0.0" y="50" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-Ci-ub7">
+                                        <rect key="frame" x="0.0" y="100" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="AZW-1D-Xf9">
+                                <rect key="frame" x="168" y="76.5" width="136" height="175"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7On-zg-I9C">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFw-0R-cU8">
+                                        <rect key="frame" x="0.0" y="47" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGx-pR-jwA">
+                                        <rect key="frame" x="0.0" y="94" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0x-M8-0UD">
+                                        <rect key="frame" x="0.0" y="141" width="136" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="zEK-2q-je0"/>
+                        <constraints>
+                            <constraint firstItem="AZW-1D-Xf9" firstAttribute="top" secondItem="dfF-8C-3KG" secondAttribute="bottom" constant="40" id="3VB-5f-Ttg"/>
+                            <constraint firstItem="dfF-8C-3KG" firstAttribute="leading" secondItem="3Vo-DZ-NCU" secondAttribute="leading" constant="16" id="5pr-gt-7Lk"/>
+                            <constraint firstItem="3Vo-DZ-NCU" firstAttribute="trailing" secondItem="dfF-8C-3KG" secondAttribute="trailing" constant="16" id="7q7-Al-4bB"/>
+                            <constraint firstItem="3Vo-DZ-NCU" firstAttribute="trailing" secondItem="jUp-ha-1JT" secondAttribute="trailing" constant="16" id="FEy-j0-qpt"/>
+                            <constraint firstItem="jUp-ha-1JT" firstAttribute="top" secondItem="D0x-M8-0UD" secondAttribute="bottom" constant="100" id="GwK-lx-GtB"/>
+                            <constraint firstItem="DmO-La-sZX" firstAttribute="top" secondItem="jUp-ha-1JT" secondAttribute="bottom" constant="40" id="Pxy-xw-iUP"/>
+                            <constraint firstItem="AZW-1D-Xf9" firstAttribute="leading" secondItem="ogH-0e-Xnl" secondAttribute="trailing" constant="22" id="Sbj-1z-O4w"/>
+                            <constraint firstItem="sKg-3q-1Ra" firstAttribute="leading" secondItem="DmO-La-sZX" secondAttribute="trailing" constant="22" id="TC9-IY-5Zb"/>
+                            <constraint firstItem="dfF-8C-3KG" firstAttribute="top" secondItem="3Vo-DZ-NCU" secondAttribute="top" constant="16" id="Xkh-bz-4F3"/>
+                            <constraint firstItem="ogH-0e-Xnl" firstAttribute="leading" secondItem="3Vo-DZ-NCU" secondAttribute="leading" constant="16" id="bvY-EC-Rcs"/>
+                            <constraint firstItem="jUp-ha-1JT" firstAttribute="leading" secondItem="3Vo-DZ-NCU" secondAttribute="leading" constant="16" id="e63-zG-jn0"/>
+                            <constraint firstItem="3Vo-DZ-NCU" firstAttribute="trailing" secondItem="AZW-1D-Xf9" secondAttribute="trailing" constant="16" id="fhi-Z7-SsC"/>
+                            <constraint firstItem="DmO-La-sZX" firstAttribute="leading" secondItem="3Vo-DZ-NCU" secondAttribute="leading" constant="16" id="lhf-bg-mVr"/>
+                            <constraint firstItem="3Vo-DZ-NCU" firstAttribute="trailing" secondItem="sKg-3q-1Ra" secondAttribute="trailing" constant="16" id="qwG-Sp-za1"/>
+                            <constraint firstItem="sKg-3q-1Ra" firstAttribute="top" secondItem="jUp-ha-1JT" secondAttribute="bottom" constant="40" id="rgO-Zz-AcM"/>
+                            <constraint firstItem="ogH-0e-Xnl" firstAttribute="top" secondItem="dfF-8C-3KG" secondAttribute="bottom" constant="40" id="tiA-uU-blA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Vo-DZ-NCU"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ev-2j-aWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-52" y="46"/>
         </scene>
