@@ -6,7 +6,7 @@
 //  Copyright © 2020 KozhanovMikhail. All rights reserved.
 //
 
-import UIKit
+import UIKit // Олег
 
 class PensionViewController: UIViewController {
     
