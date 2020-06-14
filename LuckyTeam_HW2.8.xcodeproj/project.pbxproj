@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1037595D24969E5F0022CBA1 /* CreditTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1037595C24969E5F0022CBA1 /* CreditTwo.storyboard */; };
 		10AEAEE62494F6C40061C668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE52494F6C40061C668 /* AppDelegate.swift */; };
 		10AEAEE82494F6C40061C668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE72494F6C40061C668 /* SceneDelegate.swift */; };
 		10AEAEEA2494F6C40061C668 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE92494F6C40061C668 /* MainViewController.swift */; };
@@ -16,12 +17,12 @@
 		10AEAEFE2494FA4B0061C668 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */; };
 		10AEAF002494FA7C0061C668 /* PensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */; };
 		10AEAF022494FAB00061C668 /* PayDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAF012494FAB00061C668 /* PayDayViewController.swift */; };
-		10AEAF082494FB040061C668 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF072494FB040061C668 /* Credit.storyboard */; };
 		10AEAF0A2494FB140061C668 /* Pension.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF092494FB140061C668 /* Pension.storyboard */; };
 		10AEAF0C2494FB1C0061C668 /* PayDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1037595C24969E5F0022CBA1 /* CreditTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CreditTwo.storyboard; path = LuckyTeam_HW2.8/Storyboards/CreditTwo.storyboard; sourceTree = SOURCE_ROOT; };
 		10AEAEE22494F6C40061C668 /* LuckyTeam_HW2.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyTeam_HW2.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AEAEE52494F6C40061C668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10AEAEE72494F6C40061C668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = LuckyTeam_HW2.8/Storyboards/CreditViewController.swift; sourceTree = SOURCE_ROOT; };
 		10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensionViewController.swift; sourceTree = "<group>"; };
 		10AEAF012494FAB00061C668 /* PayDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDayViewController.swift; sourceTree = "<group>"; };
-		10AEAF072494FB040061C668 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
 		10AEAF092494FB140061C668 /* Pension.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pension.storyboard; sourceTree = "<group>"; };
 		10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayDay.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				10AEAEEB2494F6C40061C668 /* Main.storyboard */,
-				10AEAF072494FB040061C668 /* Credit.storyboard */,
+				1037595C24969E5F0022CBA1 /* CreditTwo.storyboard */,
 				10AEAF092494FB140061C668 /* Pension.storyboard */,
 				10AEAF0B2494FB1C0061C668 /* PayDay.storyboard */,
 				10AEAEF02494F6C60061C668 /* LaunchScreen.storyboard */,
@@ -177,10 +177,10 @@
 			files = (
 				10AEAEF22494F6C60061C668 /* LaunchScreen.storyboard in Resources */,
 				10AEAF0A2494FB140061C668 /* Pension.storyboard in Resources */,
+				1037595D24969E5F0022CBA1 /* CreditTwo.storyboard in Resources */,
 				10AEAEEF2494F6C60061C668 /* Assets.xcassets in Resources */,
 				10AEAEED2494F6C40061C668 /* Main.storyboard in Resources */,
 				10AEAF0C2494FB1C0061C668 /* PayDay.storyboard in Resources */,
-				10AEAF082494FB040061C668 /* Credit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

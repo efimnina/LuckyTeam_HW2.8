@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="870" y="85"/>
         </scene>
-        <!--Credit-->
+        <!--CreditTwo-->
         <scene sceneID="b7H-R5-g1J">
             <objects>
-                <viewControllerPlaceholder storyboardName="Credit" id="Zhf-Pf-sDz" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CreditTwo" id="Zhf-Pf-sDz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMi-JD-bcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="862" y="138"/>
