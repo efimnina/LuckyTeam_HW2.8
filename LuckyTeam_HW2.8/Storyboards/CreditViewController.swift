@@ -32,18 +32,21 @@ class CreditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateButton.layer.cornerRadius = 7
+        interestRateAnnualTF.delegate = self
+        apartmentСostTF.delegate = self
+        anInitialFeeTF.delegate = self
+        mortgageTermTF.delegate = self
     }
     
     @IBAction func showCalculateButton() {
-        chekTextField(sender: interestRateAnnualTF)
-        chekTextField(sender: apartmentСostTF)
-        chekTextField(sender: anInitialFeeTF)
-        chekTextField(sender: mortgageTermTF)
+        guard let apartmentСost = apartmentСostTF.text else { return }
+        guard let anInitialFee = anInitialFeeTF.text else { return }
         
-        monthlyPaymentLabel.text = calculateMonthlyPayment()
-        overpaymentLabel.text =  calculateOverpaymant()
-        totalCostLabel.text = calculateTotalRate()
-        
+        if (Int(apartmentСost) ?? 0) >= (Int(anInitialFee) ?? 0) {
+            chekTextField(senders: interestRateAnnualTF, apartmentСostTF, anInitialFeeTF, mortgageTermTF)
+        } else {
+            showAlert(title: "Ошибка", message: "Взнос больше стоимости квартиры")
+        }
     }
     
     private func calculateMonthlyPayment() -> String {
@@ -57,7 +60,6 @@ class CreditViewController: UIViewController {
         if let mortgageTerm = mortgageTermTF.text {
             totalRate = pow((1 + monthlyRate), (Double(mortgageTerm) ?? 0))
         }
-        
         monthlyPayment = Double(creditAmount) * monthlyRate * totalRate / (totalRate - 1)
         return string(from: monthlyPayment)
     }
@@ -84,11 +86,36 @@ class CreditViewController: UIViewController {
     private func string (from sender: Double ) -> String {
         String(format: "%.2f", sender)
     }
-    
-    private func chekTextField(sender: UITextField) {
-        guard sender.text != "" && sender.text != "0" else {
-            showAlert(title: "Ошибка", message: "Введите корректное значение")
-            return
+   
+    private func chekTextField(senders: UITextField...) {
+        for sender in senders {
+            guard sender.text != "" && sender.text != "0" else {
+                showAlert(title: "Ошибка", message: "Введите корректное значение")
+                return
+            }
         }
+        getValue()
     }
+    
+    private func getValue() {
+        monthlyPaymentLabel.text = calculateMonthlyPayment()
+        overpaymentLabel.text = calculateOverpaymant()
+        totalCostLabel.text = calculateTotalRate()
+    }
+}
+
+extension CreditViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
+    
 }
