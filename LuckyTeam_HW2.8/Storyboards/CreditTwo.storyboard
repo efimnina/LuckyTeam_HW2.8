@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Credit View Controller-->
+        <!--Credit Two View Controller-->
         <scene sceneID="C4Y-8M-O7e">
             <objects>
-                <viewController id="CRC-IS-DC0" customClass="CreditViewController" customModule="LuckyTeam_HW2_8" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CRC-IS-DC0" customClass="CreditTwoViewController" customModule="LuckyTeam_HW2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="feb-y5-1ba">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="showCalculateButton" destination="CRC-IS-DC0" eventType="touchUpInside" id="RjU-Ad-8UP"/>
+                                    <action selector="showCalculateButton" destination="CRC-IS-DC0" eventType="touchUpInside" id="f2l-On-gUT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,14 +194,14 @@
                         <viewLayoutGuide key="safeArea" id="ONb-Pg-rJz"/>
                     </view>
                     <connections>
-                        <outlet property="anInitialFeeTF" destination="myP-7j-2z8" id="I5E-Nj-dyX"/>
-                        <outlet property="apartmentСostTF" destination="3j2-gS-B8N" id="DW7-4R-JQz"/>
-                        <outlet property="calculateButton" destination="fcN-cJ-Xko" id="59a-Mz-vNb"/>
-                        <outlet property="interestRateAnnualTF" destination="q8S-P3-dyy" id="8z2-vO-yNZ"/>
-                        <outlet property="monthlyPaymentLabel" destination="c7a-dF-jic" id="py8-nj-ja5"/>
-                        <outlet property="mortgageTermTF" destination="QDp-Ne-z3I" id="pLO-jZ-ll5"/>
-                        <outlet property="overpaymentLabel" destination="mdG-ro-90t" id="0ef-EP-eIa"/>
-                        <outlet property="totalCostLabel" destination="a06-fA-qRf" id="I3a-Gv-ZPk"/>
+                        <outlet property="anInitialFeeTF" destination="myP-7j-2z8" id="f2n-CY-38c"/>
+                        <outlet property="apartmentСostTF" destination="3j2-gS-B8N" id="69C-rs-0fx"/>
+                        <outlet property="calculateButton" destination="fcN-cJ-Xko" id="9km-a8-IXs"/>
+                        <outlet property="interestRateAnnualTF" destination="q8S-P3-dyy" id="p9u-Jw-Edv"/>
+                        <outlet property="monthlyPaymentLabel" destination="c7a-dF-jic" id="1Zj-yX-kTi"/>
+                        <outlet property="mortgageTermTF" destination="QDp-Ne-z3I" id="NdJ-K3-S4J"/>
+                        <outlet property="overpaymentLabel" destination="mdG-ro-90t" id="e9J-Qm-dnN"/>
+                        <outlet property="totalCostLabel" destination="a06-fA-qRf" id="QAC-XW-1Lr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLn-C0-WoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

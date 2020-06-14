@@ -8,7 +8,7 @@
 
 import UIKit // Юля
 
-class CreditViewController: UIViewController {
+class CreditTwoViewController: UIViewController {
     
     @IBOutlet var interestRateAnnualTF: UITextField!
     @IBOutlet var apartmentСostTF: UITextField!
@@ -104,7 +104,7 @@ class CreditViewController: UIViewController {
     }
 }
 
-extension CreditViewController: UITextFieldDelegate {
+extension CreditTwoViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
