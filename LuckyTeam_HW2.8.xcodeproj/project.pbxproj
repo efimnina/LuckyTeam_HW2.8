@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D0B03A24962F660033E9AF /* Proffesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B03924962F660033E9AF /* Proffesions.swift */; };
+		04D0B03D249630020033E9AF /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B03C249630020033E9AF /* Questions.swift */; };
+		04D0B04124963ABC0033E9AF /* ResultPensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B04024963ABC0033E9AF /* ResultPensionViewController.swift */; };
+		04D0B043249648780033E9AF /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B042249648780033E9AF /* Keys.swift */; };
+		04D0B047249650050033E9AF /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B046249650050033E9AF /* Gender.swift */; };
+		04D0B049249650380033E9AF /* AgeToPension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D0B048249650380033E9AF /* AgeToPension.swift */; };
 		10AEAEE62494F6C40061C668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE52494F6C40061C668 /* AppDelegate.swift */; };
 		10AEAEE82494F6C40061C668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE72494F6C40061C668 /* SceneDelegate.swift */; };
 		10AEAEEA2494F6C40061C668 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEAEE92494F6C40061C668 /* MainViewController.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04D0B03924962F660033E9AF /* Proffesions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proffesions.swift; sourceTree = "<group>"; };
+		04D0B03C249630020033E9AF /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		04D0B04024963ABC0033E9AF /* ResultPensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPensionViewController.swift; sourceTree = "<group>"; };
+		04D0B042249648780033E9AF /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		04D0B046249650050033E9AF /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		04D0B048249650380033E9AF /* AgeToPension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeToPension.swift; sourceTree = "<group>"; };
 		10AEAEE22494F6C40061C668 /* LuckyTeam_HW2.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyTeam_HW2.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AEAEE52494F6C40061C668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10AEAEE72494F6C40061C668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D0B03B24962F6E0033E9AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04D0B03924962F660033E9AF /* Proffesions.swift */,
+				04D0B03C249630020033E9AF /* Questions.swift */,
+				04D0B042249648780033E9AF /* Keys.swift */,
+				04D0B046249650050033E9AF /* Gender.swift */,
+				04D0B048249650380033E9AF /* AgeToPension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		10AEAED92494F6C40061C668 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +92,7 @@
 		10AEAEE42494F6C40061C668 /* LuckyTeam_HW2.8 */ = {
 			isa = PBXGroup;
 			children = (
+				04D0B03B24962F6E0033E9AF /* Models */,
 				10AEAEF92494F70B0061C668 /* SupportingFiles */,
 				10AEAEFA2494F7450061C668 /* ViewControllers */,
 				10AEAEFB2494F7570061C668 /* Storyboards */,
@@ -92,6 +117,7 @@
 				10AEAEE92494F6C40061C668 /* MainViewController.swift */,
 				10AEAEFD2494FA4B0061C668 /* CreditViewController.swift */,
 				10AEAEFF2494FA7C0061C668 /* PensionViewController.swift */,
+				04D0B04024963ABC0033E9AF /* ResultPensionViewController.swift */,
 				10AEAF012494FAB00061C668 /* PayDayViewController.swift */,
 			);
 			path = ViewControllers;
@@ -191,10 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D0B047249650050033E9AF /* Gender.swift in Sources */,
+				04D0B04124963ABC0033E9AF /* ResultPensionViewController.swift in Sources */,
 				10AEAF002494FA7C0061C668 /* PensionViewController.swift in Sources */,
+				04D0B03A24962F660033E9AF /* Proffesions.swift in Sources */,
 				10AEAEEA2494F6C40061C668 /* MainViewController.swift in Sources */,
+				04D0B049249650380033E9AF /* AgeToPension.swift in Sources */,
 				10AEAEE62494F6C40061C668 /* AppDelegate.swift in Sources */,
+				04D0B043249648780033E9AF /* Keys.swift in Sources */,
 				10AEAEE82494F6C40061C668 /* SceneDelegate.swift in Sources */,
+				04D0B03D249630020033E9AF /* Questions.swift in Sources */,
 				10AEAF022494FAB00061C668 /* PayDayViewController.swift in Sources */,
 				10AEAEFE2494FA4B0061C668 /* CreditViewController.swift in Sources */,
 			);
